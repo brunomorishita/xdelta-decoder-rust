@@ -6,3 +6,7 @@ license = "MIT/Apache-2.0"
 
 [dependencies]
 lzma-sys = "0.1"
+
+[[bin]]
+name = "xdelta_decoder"
+path = "src/xdelta_decoder.rs"
