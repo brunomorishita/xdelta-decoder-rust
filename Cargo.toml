@@ -7,6 +7,14 @@ license = "MIT/Apache-2.0"
 [dependencies]
 lzma-sys = "0.1"
 
+[dev-dependencies]
+criterion = "0.4"
+
+[[bench]]
+name = "benchmark"
+path = "src/benchmark.rs"
+harness = false
+
 [[bin]]
 name = "xdelta_decoder"
 path = "src/xdelta_decoder.rs"
