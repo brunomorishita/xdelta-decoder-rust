@@ -8,7 +8,10 @@ license = "MIT/Apache-2.0"
 lzma-sys = "0.1"
 
 [dev-dependencies]
-criterion = "0.4"
+criterion = "0.3"
+pprof = { version = "0.4.2", features = ["flamegraph", "criterion"] }
+# We use rand in our benchmarks to create random data to sort
+rand = "0.8.0"
 
 [[bench]]
 name = "benchmark"
